@@ -132,7 +132,7 @@ while True:
         email = input('삭제하려는 이메일 >>>')
         delok = 0
         for i in range(len(custlist)):
-            if email == custlist['email']:
+            if email == custlist[i]['email']:
                 print('{} 고객님의 정보가 삭제됩니다'.format(custlist[i]['name']))
                 del custlist[i]
                 delok = 1
